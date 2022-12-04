@@ -1,0 +1,94 @@
+@import '../styles/colors.module';
+
+.button {
+  display: inline-block;
+  border: none;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: $blue;
+  color: $light;
+
+  text-decoration: none;
+  font-size: 1.1rem;
+
+  letter-spacing: 0.07rem;
+  border-radius: 2px;
+  transition: all 250ms ease-in-out, transform 250ms ease;
+  &:hover {
+    background: $green;
+    color: $dark;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.saveBtn {
+  display: inline-block;
+  border: none;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: $dark;
+  color: $light;
+  border-radius: 2px;
+  transition: all 250ms ease-in-out, transform 150ms ease;
+  &:hover {
+    background: $light;
+    color: $dark;
+    border: 2px dotted $blue;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.input {
+  width: 20rem;
+  height: 2rem;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid $dark;
+  background-color: $light;
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+  &:focus {
+    background-color: whitesmoke;
+    color: $dark;
+  }
+}
+
+.ReactQuill {
+  margin-block: 1rem;
+  width: 20rem;
+}
+.notesInner {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid $dark;
+  border-radius: 5px;
+  width: 100%;
+  text-align: start;
+  color: $dark;
+  cursor: pointer;
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.editBtn,
+.deleteBtn {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 10px 10px 0;
+}
+.deleteBtn {
+  background-color: $red;
+  color: whiteSmoke;
+}
+.editBtn {
+  background-color: $green;
+  color: $dark;
+}
